@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run lint && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "eslint-plugin-react-dom": "^5.24.10",
+    "eslint-plugin-react-x": "^5.24.10",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
